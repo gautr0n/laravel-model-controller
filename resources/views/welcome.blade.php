@@ -12,20 +12,4 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 </head>
 
-<body class="container mt-5">
-    <h1>Comics</h1>
-    <div class="row">
-
-        @foreach ($comics as $comic)
-
-            <div class="col-4">
-                <img src="{{ $comic['thumb'] }}" alt="">
-                <h3>{{ $comic['title'] }}</h3>
-            </div>
-
-        @endforeach
-
-    </div>
-</body>
-
 </html>
