@@ -12,4 +12,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 </head>
 
+    <div class="container">
+        <div class="row">
+            @forelse ( $movies as $movie )
+            <div class="col-2">
+                <h3>{{ $movie->title }}</h3>
+                <div>{{ $movie->date }}</div>
+            </div>
+            @empty
+
+            @endforelse
+        </div>
+    </div>
+
 </html>
